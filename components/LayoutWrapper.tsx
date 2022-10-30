@@ -34,7 +34,7 @@ const LayoutWrapper = ({ children }: Props) => {
     'py-2 md:py-8 sticky top-n-1 z-50 transition-all backdrop mx-auto border-b border-b-0 border-slate-900/10 dark:border-slate-300/10 mb-16 w-full'
 
   const classes = stuck ? stuckClasses : unstuckClasses
-
+  console.log("theme", theme)
   useEffect(() => {
     const cachedRef = ref.current
     const observer = new IntersectionObserver(
@@ -57,14 +57,12 @@ const LayoutWrapper = ({ children }: Props) => {
                   <div className=" text-2xl font-semibold sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">
                   <div className=" mr-3">
                     {
-                    theme=='dark' ?
+                    theme=='dark' || theme==undefined   ?
                     <Whitelogo/>
                     :
                     <Logo/>
-
                     }
-                  
-
+                
                   </div>
                   </div>
                 

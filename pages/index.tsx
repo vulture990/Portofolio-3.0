@@ -87,6 +87,29 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             />
 
         </div>
+        <div className="flex flex-col items-start justify-start  md:justify-center  md:items-center md:flex-row md:space-x-6 md:mt-24">
+
+          <div className='text-center '>
+            <h2 className='font-extrabold  text-md md:text-3xl  '>
+            Skills
+            </h2>
+            <div className='flex flex- space-y-2 md:space-y-5'>
+              <div className='flex flex-rows justify-between'>
+
+            <h1 className="mono-type text-center  text-2xl leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-xl md:leading-14">
+            Frontend
+          </h1>
+          <h1 className="mono-type text-center  text-2xl leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-xl md:leading-14">
+            Backend
+          </h1>
+          <h1 className="mono-type text-center  text-2xl leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-xl md:leading-14">
+            DevOps
+          </h1>
+              </div>
+          </div>
+
+            </div>
+            </div>
 
       </div>
      
