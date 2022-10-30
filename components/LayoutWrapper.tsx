@@ -57,17 +57,13 @@ const LayoutWrapper = ({ children }: Props) => {
                   <div className=" text-2xl font-semibold sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">
                   <div className=" mr-3">
                     {
-                    theme==='white' ?
-                    <Logo/>
-                    :
-                    <div/>
-                    }
-                    {
-                    theme==='dark' ?
+                    theme=='dark' ?
                     <Whitelogo/>
                     :
                     <Logo/>
+
                     }
+                  
 
                   </div>
                   </div>
