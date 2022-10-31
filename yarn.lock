@@ -1186,7 +1186,7 @@
     "@types/mdx" "^2.0.0"
     "@types/react" ">=16"
 
-"@motionone/animation@^10.13.1":
+"@motionone/animation@^10.13.1", "@motionone/animation@^10.14.0":
   "integrity" "sha512-h+1sdyBP8vbxEBW5gPFDnj+m2DCqdlAuf2g6Iafb1lcMnqjsRXWlPw1AXgvUMXmreyhqmPbJqoNfIKdytampRQ=="
   "resolved" "https://registry.npmjs.org/@motionone/animation/-/animation-10.14.0.tgz"
   "version" "10.14.0"
@@ -1194,6 +1194,18 @@
     "@motionone/easing" "^10.14.0"
     "@motionone/types" "^10.14.0"
     "@motionone/utils" "^10.14.0"
+    "tslib" "^2.3.1"
+
+"@motionone/dom@^10.14.3":
+  "integrity" "sha512-tese0zSBsWwxCcs9qGNyynhnQ3/n43F6XI588AUKBIfE9D5ZelzQXOzr/T0+ErsVppXJtyGHviYEnv7KHc9x7Q=="
+  "resolved" "https://registry.npmjs.org/@motionone/dom/-/dom-10.14.3.tgz"
+  "version" "10.14.3"
+  dependencies:
+    "@motionone/animation" "^10.14.0"
+    "@motionone/generators" "^10.14.0"
+    "@motionone/types" "^10.14.0"
+    "@motionone/utils" "^10.14.0"
+    "hey-listen" "^1.0.8"
     "tslib" "^2.3.1"
 
 "@motionone/dom@10.13.1":
@@ -1216,13 +1228,21 @@
     "@motionone/utils" "^10.14.0"
     "tslib" "^2.3.1"
 
-"@motionone/generators@^10.13.1":
+"@motionone/generators@^10.13.1", "@motionone/generators@^10.14.0":
   "integrity" "sha512-6kRHezoFfIjFN7pPpaxmkdZXD36tQNcyJe3nwVqwJ+ZfC0e3rFmszR8kp9DEVFs9QL/akWjuGPSLBI1tvz+Vjg=="
   "resolved" "https://registry.npmjs.org/@motionone/generators/-/generators-10.14.0.tgz"
   "version" "10.14.0"
   dependencies:
     "@motionone/types" "^10.14.0"
     "@motionone/utils" "^10.14.0"
+    "tslib" "^2.3.1"
+
+"@motionone/svelte@^10.14.3":
+  "integrity" "sha512-fHyyyGJRkHsfE2IAg+6YU0BiMT/Jz5OAMpJvBZs3oGfwsgdqSms4YtLW22Ecs87e59hPZ26SqWCHad6enRfD9A=="
+  "resolved" "https://registry.npmjs.org/@motionone/svelte/-/svelte-10.14.3.tgz"
+  "version" "10.14.3"
+  dependencies:
+    "@motionone/dom" "^10.14.3"
     "tslib" "^2.3.1"
 
 "@motionone/types@^10.13.0", "@motionone/types@^10.14.0":
@@ -1237,6 +1257,14 @@
   dependencies:
     "@motionone/types" "^10.14.0"
     "hey-listen" "^1.0.8"
+    "tslib" "^2.3.1"
+
+"@motionone/vue@^10.14.3":
+  "integrity" "sha512-FZ/vefJMDthnzlVQbL2I54WEvDyx720KClxWqmHZZ+wKic+i9XhNCU1qijGcvA3/1sFFp8u9fOqmejEWXSsHmw=="
+  "resolved" "https://registry.npmjs.org/@motionone/vue/-/vue-10.14.3.tgz"
+  "version" "10.14.3"
+  dependencies:
+    "@motionone/dom" "^10.14.3"
     "tslib" "^2.3.1"
 
 "@next/bundle-analyzer@^12.1.5":
@@ -4938,6 +4966,18 @@
   "integrity" "sha512-iSAJLHYKnX41mKcJKjqvnAN9sf0LMDTXDEvFv+ffuRR9a1MIuXLjMNL6EsnDHSkKLTWNqQQ5uo61P4EbU4NU+Q=="
   "resolved" "https://registry.npmjs.org/moo/-/moo-0.5.2.tgz"
   "version" "0.5.2"
+
+"motion@^10.14.3":
+  "integrity" "sha512-xBbgYho8nPiR2OZOrfJTbJpiiQl0F2PZF6H5ItAeIPJEfA/x0ZwxpFC/gbsKfUv3CFUVAoxCRkTDCJjiZ48dxw=="
+  "resolved" "https://registry.npmjs.org/motion/-/motion-10.14.3.tgz"
+  "version" "10.14.3"
+  dependencies:
+    "@motionone/animation" "^10.14.0"
+    "@motionone/dom" "^10.14.3"
+    "@motionone/svelte" "^10.14.3"
+    "@motionone/types" "^10.14.0"
+    "@motionone/utils" "^10.14.0"
+    "@motionone/vue" "^10.14.3"
 
 "mri@^1.1.0":
   "integrity" "sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA=="

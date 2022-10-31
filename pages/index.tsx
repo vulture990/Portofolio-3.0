@@ -9,6 +9,7 @@ import NewsletterForm from '@/components/NewsletterForm'
 import { data } from 'rehype-citation/node/src/citation-js/core/plugins/input'
 import { transform } from 'esbuild'
 import Tracks from '@/components/Toptracker'
+import NowPlaying from '@/components/NowPlaying'
 
 const MAX_DISPLAY = 5
 
@@ -73,14 +74,13 @@ export default function Home({ posts}: InferGetStaticPropsType<typeof getStaticP
               
         </div>
         <div className="flex flex-col items-center justify-center mt-16 space-y-5 md:space-y-8">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
-            Spotify
-            </h2>
-            <div>
-           
             <p className="text-gray-600 dark:text-gray-400 mb-4">
             I believe that one's musical taste shows a lot about the kind of person one's is . Here is what i've been listening to ...
         </p>
+          
+            <div>
+              <NowPlaying/>
+           
         <Tracks />
             </div>
             </div>
