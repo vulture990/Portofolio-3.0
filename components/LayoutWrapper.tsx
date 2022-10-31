@@ -55,12 +55,12 @@ const LayoutWrapper = ({ children }: Props) => {
               <div className="flex items-center justify-between">
                   <div className=" text-2xl font-semibold sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">
                   <div className=" mr-3">
-                    {
+                    {/* {
                     theme=='dark' || theme==undefined   ?
                     <Whitelogo/>
                     :
                     <Logo/>
-                    }
+                    } */}
                 
                   </div>
                   </div>
