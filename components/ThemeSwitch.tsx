@@ -8,6 +8,7 @@ const ThemeSwitch = () => {
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
+
   return (
     <motion.button
       whileHover={{
