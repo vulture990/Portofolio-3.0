@@ -36,18 +36,22 @@ const LayoutWrapper = ({ children }: Props) => {
   const classes = stuck ? stuckClasses : unstuckClasses
   useEffect(() => {
     const cachedRef = ref.current
+    
     const observer = new IntersectionObserver(
       ([e]) => {
         setStuck(e.intersectionRatio < 1)
       },
       { threshold: [1.0] }
     )
+    // @ts-ignore
     observer.observe(cachedRef)
+    // @ts-ignore
     return () => observer.unobserve(cachedRef)
   }, [ref])
 
   return (
     <>
+     {/* @ts-ignore */}
       <header className={classes} ref={ref}>
         <div className="flex justify-between items-center max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
           <div>

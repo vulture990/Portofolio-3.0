@@ -162,6 +162,7 @@ export const BlogSEO = ({
     <>
       <CommonSEO
         title={title}
+        // @ts-ignore
         description={summary}
         ogType="article"
         ogImage={featuredImages}

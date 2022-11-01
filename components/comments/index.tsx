@@ -17,6 +17,8 @@ const Comments = ({ frontMatter }: Props) => {
   let term
   switch (
     siteMetadata.comment.giscusConfig.mapping ||
+      // @ts-ignore
+
     siteMetadata.comment.utterancesConfig.issueTerm
   ) {
     case 'pathname':
@@ -32,6 +34,7 @@ const Comments = ({ frontMatter }: Props) => {
   return (
     <>
       {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && (
+      // @ts-ignore
         <GiscusComponent mapping={term} />
       )}
     </>

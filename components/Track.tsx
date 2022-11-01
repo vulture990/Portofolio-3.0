@@ -1,3 +1,4 @@
+// @ts-ignore
 export default function Track(track) {
     return (
       <div className="flex flex-row items-baseline border-b border-gray-200 dark:border-gray-800 max-w-3xl w-full mt-8">

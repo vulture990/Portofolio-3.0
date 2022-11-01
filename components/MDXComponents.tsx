@@ -17,6 +17,7 @@ export const MDXComponents: ComponentMap = {
   //@ts-ignore
   TOCInline,
   a: CustomLink,
+  //@ts-ignore
   pre: Pre,
   wrapper: Wrapper,
   //@ts-ignore

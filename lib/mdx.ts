@@ -131,6 +131,8 @@ export async function getAllFilesFrontMatter(folder: 'blog') {
       allFrontMatter.push({
         ...frontmatter,
         slug: formatSlug(fileName),
+
+// @ts-ignore
         date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
       })
     }

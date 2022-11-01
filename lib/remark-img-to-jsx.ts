@@ -15,6 +15,8 @@ export default function remarkImgToJsx() {
     visit(
       tree,
       // only visit p tags that contain an img element
+// @ts-ignore
+
       (node: Parent): node is Parent =>
         node.type === 'paragraph' && node.children.some((n) => n.type === 'image'),
       (node: Parent) => {

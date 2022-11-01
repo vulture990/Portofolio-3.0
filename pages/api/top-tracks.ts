@@ -27,8 +27,10 @@ export const config = {
 export default async function handler(req: NextRequest) {
   const response = await getTopTracks();
   const { items } = await response.json();
+// @ts-ignore
 
   const tracks = items.slice(0, 10).map((track) => ({
+// @ts-ignore
     artist: track.artists.map((_artist) => _artist.name).join(', '),
     songUrl: track.external_urls.spotify,
     title: track.name

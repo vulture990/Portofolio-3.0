@@ -14,6 +14,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
 
     const res = await fetch(`/api/${siteMetadata.newsletter.provider}`, {
       body: JSON.stringify({
+      //@ts-ignore
         email: inputEl.current.value,
       }),
       headers: {
@@ -29,6 +30,8 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
       return
     }
 
+
+ // @ts-ignore
     inputEl.current.value = ''
     setError(false)
     setSubscribed(true)
@@ -80,7 +83,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
 }
 
 export default NewsletterForm
-
+// @ts-ignore
 export const BlogNewsletterForm = ({ title }) => (
   <div className="flex items-center justify-center">
     <div className="p-6 bg-gray-100 dark:bg-gray-800 sm:px-14 sm:py-8">

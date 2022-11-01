@@ -16,6 +16,7 @@ interface TableOfContentProps {
 const Table_of_Contents = ({ ids }: TableOfContentProps) => {
   const [currentActiveIndex] = useScrollSpy(
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    // @ts-ignore
     ids.map((item) => document.querySelector(`#${item.id}`).parentElement.closest('section')!),
     { offset: OFFSET }
   )

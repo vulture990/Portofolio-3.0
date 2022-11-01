@@ -29,6 +29,7 @@ export const getStaticProps: GetStaticProps<{
   prev?: { slug: string; title: string }
   next?: { slug: string; title: string }
 }> = async ({ params }) => {
+// @ts-ignore
   const slug = (params.slug as string[]).join('/')
   const allPosts = await getAllFilesFrontMatter('blog')
   const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === slug)
@@ -37,6 +38,7 @@ export const getStaticProps: GetStaticProps<{
   const post = await getFileBySlug<PostFrontMatter>('blog', slug)
   // @ts-ignore
   const authorList = post.frontMatter.authors || ['default']
+// @ts-ignore
   const authorPromise = authorList.map(async (author) => {
     const authorResults = await getFileBySlug<AuthorFrontMatter>('authors', [author])
     return authorResults.frontMatter

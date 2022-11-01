@@ -1,7 +1,16 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+// make types for title , description ,imgSrc and href
+type Props = {
+  title: string
+  description: string
+  imgSrc: string
+  href: string
+}
+
+
+const Card = ({ title, description, imgSrc, href }:Props) => (
   <div className="p-4 md:w-1/2 md" style={{ maxWidth: '544px' }}>
     <div
       className={`${

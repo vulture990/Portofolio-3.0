@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useRef, useEffect, useState } from 'react'
 
 import Table_of_Contents from './TOC'
-
+// @ts-ignore
 const LeftNav = ({ ids }) => {
   const [isSticky, setIsSticky] = useState(false)
   const ref = useRef()
@@ -24,6 +24,7 @@ const LeftNav = ({ ids }) => {
   }, [isSticky])
 
   return (
+    // @ts-ignore
     <div className={isSticky ? 'leftNav isSticky' : 'leftNav'} ref={ref}>
       <Table_of_Contents ids={ids} />
     </div>

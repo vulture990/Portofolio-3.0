@@ -23,15 +23,34 @@ const Giscus = ({ mapping }: Props) => {
     setEnabledLoadComments(false)
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'
+
+      // @ts-ignore
     script.setAttribute('data-repo', siteMetadata.comment.giscusConfig.repo)
+      // @ts-ignore
     script.setAttribute('data-repo-id', siteMetadata.comment.giscusConfig.repositoryId)
+      // @ts-ignore
+
     script.setAttribute('data-category', siteMetadata.comment.giscusConfig.category)
+      // @ts-ignore
+
     script.setAttribute('data-category-id', siteMetadata.comment.giscusConfig.categoryId)
+      // @ts-ignore
+
     script.setAttribute('data-mapping', mapping)
+      // @ts-ignore
+
     script.setAttribute('data-reactions-enabled', siteMetadata.comment.giscusConfig.reactions)
+      // @ts-ignore
+
     script.setAttribute('data-emit-metadata', siteMetadata.comment.giscusConfig.metadata)
+      // @ts-ignore
+
     script.setAttribute('data-theme', commentsTheme)
+      // @ts-ignore
+
     script.setAttribute('crossorigin', 'anonymous')
+      // @ts-ignore
+
     script.async = true
 
     const comments = document.getElementById(COMMENTS_ID)

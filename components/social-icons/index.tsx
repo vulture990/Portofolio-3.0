@@ -13,10 +13,11 @@ const components = {
   twitter: Twitter,
 }
 
+// @ts-ignore
 const SocialIcon = ({ kind, href }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null
-
+// @ts-ignore
   const SocialSvg = components[kind]
 
   return (
