@@ -72,15 +72,12 @@ const LayoutWrapper = ({ children }: Props) => {
                   {link.title}
                 </Link>
               ))}
+            <ThemeSwitch />
             </div>
           
             <MobileNav />
             <div className="flex items-center  mb-3 space-x-4">
-          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
-          <SocialIcon kind="github" href={siteMetadata.github} />
-          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} />
-            <ThemeSwitch />
+         
           
           </div>
           </div>
