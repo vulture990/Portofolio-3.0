@@ -35,12 +35,24 @@ export default async function handler(req: NextRequest) {
     songUrl: track.external_urls.spotify,
     title: track.name
   }));
+  try {
+    return new Response(JSON.stringify({ tracks }), {
+      status: 200,
+      headers: {
+        'content-type': 'application/json',
+        'cache-control': 'public, s-maxage=60, stale-while-revalidate=30'
+      }
+    });
+  }
+  catch (error) {
+    console.log("error", error)
+  }
 
-  return new Response(JSON.stringify({ tracks }), {
-    status: 200,
-    headers: {
-      'content-type': 'application/json',
-      'cache-control': 'public, s-maxage=86400, stale-while-revalidate=43200'
-    }
-  });
+  // return new Response(JSON.stringify({ tracks }), {
+  //   status: 200,
+  //   headers: {
+  //     'content-type': 'application/json',
+  //     'cache-control': 'public, s-maxage=86400, stale-while-revalidate=43200'
+  //   }
+  // });
 }
