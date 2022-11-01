@@ -34,6 +34,7 @@ const LayoutWrapper = ({ children }: Props) => {
       },
       { threshold: [1.0] }
     )
+    // @ts-ignore
     observer.observe(cachedRef)
     return () => observer.unobserve(cachedRef)
   }, [ref])
