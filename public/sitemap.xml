@@ -9,18 +9,18 @@
   </url>
 
   <url>
-    <loc>//tags/existentialism</loc>
-  </url>
-
-  <url>
     <loc>//tags/next-js</loc>
   </url>
 
   <url>
-    <loc>//tags/nietzsche</loc>
+    <loc>//tags/existentialism</loc>
   </url>
 
   <url>
     <loc>//tags/philosophy</loc>
+  </url>
+
+  <url>
+    <loc>//tags/nietzsche</loc>
   </url>
 </urlset>

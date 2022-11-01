@@ -54,7 +54,7 @@ export default function Home({ posts}: InferGetStaticPropsType<typeof getStaticP
         </svg>
         <div className='h-16 flex flex-col'>
         <h1 className='  rotate-12 font-extrabold text-xl md:text-2xl text-red-400 '>
-         Gym Rat
+         Athlete
         </h1>
         <h1  className=' rotate-12 font-extrabold text-xl md:text-2xl text-yellow-400'>
           Guitarist
