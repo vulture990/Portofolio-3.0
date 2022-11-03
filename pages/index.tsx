@@ -200,13 +200,16 @@ export default function Home({ posts}: InferGetStaticPropsType<typeof getStaticP
                         Coming Soon ...               
               </h1>
               <div className="flex flex-col items-center justify-center mt-16 space-y-5 md:space-y-8">
+
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
             Latest Posts
           </h2>
           <p className="text-gray-700 dark:text-gray-300">
             {`I write about web development, tech, and life in general , Philosophy and psychology mostly . Here are my latest posts.`}
           </p>
+
         </div>
+     
         <div className="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-3">
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary } = frontMatter
@@ -229,6 +232,23 @@ export default function Home({ posts}: InferGetStaticPropsType<typeof getStaticP
               </div>
             )
           })}
+        </div>
+
+        <div
+          className="flex flex-col items-center justify-center mt-16 space-y-5 md:space-y-8"
+        >
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
+           My CV
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300">
+            {`Feel free to check out my CV here`}
+          </p>
+          <div className="flex items-center justify-center mt-6">
+            <Link href="/cv.pdf" className="text-base font-medium text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300">
+              Download
+            </Link>
+        </div>
+            
         </div>
 
       </div>

@@ -4,7 +4,6 @@ import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
 import { motion } from 'framer-motion'
 
-// Icons taken from: https://simpleicons.org/
 
 const components = {
   mail: Mail,
@@ -22,6 +21,7 @@ const SocialIcon = ({ kind, href }) => {
 
   return (
     <motion.a
+      key={kind}
       className="text-sm text-gray-500 transition hover:text-gray-600"
       target="_blank"
       rel="noopener noreferrer"
