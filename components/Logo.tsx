@@ -10,6 +10,7 @@ export const Logo: FC = () => {
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 458 458"
+        key="logo"
         width="70px"
         overflow="visible"
         whileHover={{ x: 10}}
