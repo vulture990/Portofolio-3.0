@@ -27,69 +27,70 @@ const LayoutWrapper = ({ children }: Props) => {
   const classes = stuck ? stuckClasses : unstuckClasses
 
   useEffect(() => {
-    const cachedRef = ref.current
-    const observer = new IntersectionObserver(
-      ([e]) => {
-        setStuck(e.intersectionRatio < 1)
-      },
-      { threshold: [1.0] }
-    )
-    // @ts-ignore
-    observer.observe(cachedRef)
-    return () => observer.unobserve(cachedRef)
-  }, [ref])
+    const cachedRef = ref.current 
+    if (cachedRef==undefined){
+      return
+    }
 
-  return (
-    <>
-      <header className={classes} ref={ref}>
-        <div className="flex justify-between items-center max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
-          <div>
-            <Link href="/" aria-label="rooks blog">
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  {
-                      <Logo />
-                  }
-                </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden text-2xl font-semibold sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">
-                    {siteMetadata.headerTitle}
+      const observer = new IntersectionObserver(
+        ([e]) => {
+          setStuck(e.intersectionRatio < 1)
+        },
+        { threshold: [1.0] }
+        )
+        observer.observe(cachedRef)
+        return () => observer.unobserve(cachedRef )
+      }, [ref])
+      
+      return (
+        <>
+          <header className={classes} ref="aaa">
+          <div className="flex justify-between items-center max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
+            <div>
+              <Link href="/" aria-label="rooks blog">
+                <div className="flex items-center justify-between">
+                  <div className="mr-3">
+                    {<Logo />}
                   </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-bold text-gray-900 sm:p-4 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400"
-                >
-                  {link.title}
-                </Link>
-              ))}
+                  {typeof siteMetadata.headerTitle === 'string' ? (
+                    <div className="hidden text-2xl font-semibold sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">
+                      {siteMetadata.headerTitle}
+                    </div>
+                  ) : (
+                    siteMetadata.headerTitle
+                  )}
+                </div>
+              </Link>
             </div>
-          
-            <MobileNav />
-            <div className="flex items-center  mb-3 space-x-4">
-          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
-          <SocialIcon kind="github" href={siteMetadata.github} />
-          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} />
-            <ThemeSwitch />
-          
+            <div className="flex items-center text-base leading-5">
+              <div className="hidden sm:block">
+                {headerNavLinks.map((link) => (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className="p-1 font-bold text-gray-900 sm:p-4 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400"
+                  >
+                    {link.title}
+                  </Link>
+                ))}
+              </div>
+
+              <MobileNav />
+              <div className="flex items-center  mb-3 space-x-4">
+                <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
+                <SocialIcon kind="github" href={siteMetadata.github} />
+                <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
+                <SocialIcon kind="twitter" href={siteMetadata.twitter} />
+                <ThemeSwitch />
+
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-      </header>
-      <SectionContainer>
-        <main className="mb-auto">{children}</main>
-        <Footer />
-      </SectionContainer>
+        <SectionContainer>
+            <main className="mb-auto">{children}</main>
+            <Footer />
+          </SectionContainer>
+        </header>
     </>
   )
 }

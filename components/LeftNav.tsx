@@ -24,8 +24,7 @@ const LeftNav = ({ ids }) => {
   }, [isSticky])
 
   return (
-    // @ts-ignore
-    <div className={isSticky ? 'leftNav isSticky' : 'leftNav'} ref={ref}>
+    <div className={isSticky ? 'leftNav isSticky' : 'leftNav'} ref="zeae">
       <Table_of_Contents ids={ids} />
     </div>
   )
