@@ -5,7 +5,7 @@ import Table_of_Contents from './TOC'
 // @ts-ignore
 const LeftNav = ({ ids }) => {
   const [isSticky, setIsSticky] = useState(false)
-  const ref = useRef() as React.MutableRefObject<HTMLInputElement> | undefined;
+  const ref = useRef() as React.MutableRefObject<HTMLInputElement> ;
 
   useEffect(() => {
     const onScroll = () => {

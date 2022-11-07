@@ -17,7 +17,7 @@ interface Props {
 
 const LayoutWrapper = ({ children }: Props) => {
   const [stuck, setStuck] = useState(false)
-  const ref = useRef() as React.MutableRefObject<HTMLInputElement> | undefined;
+  const ref = useRef() as React.MutableRefObject<HTMLInputElement> ;
 
   const stuckClasses =
     'py-2 sticky top-n-1 z-50 transition-all backdrop isSticky mx-auto border-b border-slate-900/10 dark:border-slate-300/10 mb-16 w-full'
@@ -27,7 +27,7 @@ const LayoutWrapper = ({ children }: Props) => {
   const classes = stuck ? stuckClasses : unstuckClasses
 
   useEffect(() => {
-    const cachedRef = ref?.current 
+    const cachedRef = ref.current 
     if (cachedRef==undefined){
       return
     }
