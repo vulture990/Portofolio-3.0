@@ -29,7 +29,7 @@ export default async function handler(req: NextRequest) {
   const { items } = await response.json();
 // @ts-ignore
 
-  const tracks = items.slice(0, 10).map((track) => ({
+  const tracks = items?.slice(0, 10).map((track) => ({
 // @ts-ignore
     artist: track.artists.map((_artist) => _artist.name).join(', '),
     songUrl: track.external_urls.spotify,

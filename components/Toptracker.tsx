@@ -13,7 +13,7 @@ export default function Tracks() {
 
   return (
     <>
-      {data.tracks.map((track, index) => (
+      {data.tracks?.map((track, index) => (
         <Track ranking={index + 1} key={track.songUrl} {...track} />
       ))}
     </>

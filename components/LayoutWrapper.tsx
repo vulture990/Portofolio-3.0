@@ -17,7 +17,7 @@ interface Props {
 
 const LayoutWrapper = ({ children }: Props) => {
   const [stuck, setStuck] = useState(false)
-  const ref = useRef()
+  const ref = useRef() as React.MutableRefObject<HTMLInputElement> | undefined;
 
   const stuckClasses =
     'py-2 sticky top-n-1 z-50 transition-all backdrop isSticky mx-auto border-b border-slate-900/10 dark:border-slate-300/10 mb-16 w-full'
@@ -27,7 +27,7 @@ const LayoutWrapper = ({ children }: Props) => {
   const classes = stuck ? stuckClasses : unstuckClasses
 
   useEffect(() => {
-    const cachedRef = ref.current 
+    const cachedRef = ref?.current 
     if (cachedRef==undefined){
       return
     }
@@ -44,7 +44,7 @@ const LayoutWrapper = ({ children }: Props) => {
       
       return (
         <>
-          <header className={classes} ref="aaa">
+          <header className={classes} ref={ref}>
           <div className="flex justify-between items-center max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
             <div>
               <Link href="/" aria-label="rooks blog">
