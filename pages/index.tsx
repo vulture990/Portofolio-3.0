@@ -104,7 +104,7 @@ export default function Home({ posts}: InferGetStaticPropsType<typeof getStaticP
           </div>
             <img
               className="w-32 h-32 md:w-48 md:h-48 rounded-3xl"
-              src="p.jpg"
+              src="static/images/me.jpg"
               alt="Mohamed Salbi"
             />
 
