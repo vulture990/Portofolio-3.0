@@ -23,7 +23,7 @@ export const Logo: FC = () => {
         onMouseLeave={() => toggleName()}
       >
         {/* dark */}*
-        {theme === "dark" ? (
+        {theme === "dark" || undefined ? (
                     <><motion.path
                     fill="#ffffff"
                     d="M115.17 231.45L143.64 206.1L311.08 394.16L282.61 419.51L115.17 231.45Z" id="bSDweug76" /><motion.path
