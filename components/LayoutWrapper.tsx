@@ -1,15 +1,17 @@
-import { useState, useEffect, useRef } from 'react'
-
-import siteMetadata, { theme } from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
-import {Logo} from '@/components/Logo'
-import Link from './Link'
-import SectionContainer from './SectionContainer'
-import Footer from './Footer'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
+import { useEffect, useRef,useState } from 'react'
 import { ReactNode } from 'react'
+
+import headerNavLinks from '@/data/headerNavLinks'
+import siteMetadata from '@/data/siteMetadata'
+
+import {Logo} from '@/components/Logo'
+
+import Footer from './Footer'
+import Link from './Link'
+import MobileNav from './MobileNav'
+import SectionContainer from './SectionContainer'
 import SocialIcon from './social-icons'
+import ThemeSwitch from './ThemeSwitch'
 
 interface Props {
   children: ReactNode
@@ -50,7 +52,7 @@ const LayoutWrapper = ({ children }: Props) => {
               <Link href="/" aria-label="rooks blog">
                 <div className="flex items-center justify-between">
                   <div className="mr-3">
-                    {<Logo />}
+                    <Logo />
                   </div>
                   {typeof siteMetadata.headerTitle === 'string' ? (
                     <div className="hidden text-2xl text-white font-semibold sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">

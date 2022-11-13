@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import * as React from 'react'
-import { useRef, useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-import Table_of_Contents from './TOC'
-// @ts-ignore
-const LeftNav = ({ ids }) => {
+// import Table_of_Contents from './TOC'
+const LeftNav = ({ }) => {
   const [isSticky, setIsSticky] = useState(false)
   const ref = useRef() as React.MutableRefObject<HTMLInputElement> ;
 
@@ -25,7 +25,7 @@ const LeftNav = ({ ids }) => {
 
   return (
     <div className={isSticky ? 'leftNav isSticky' : 'leftNav'} ref={ref}>
-      <Table_of_Contents ids={ids} />
+      {/* <Table_of_Contents ids={ids} /> */}
     </div>
   )
 }
