@@ -19,7 +19,6 @@ interface Props {
 
 const LayoutWrapper = ({ children }: Props) => {
   const [stuck, setStuck] = useState(false)
-  const ref = useRef() as React.MutableRefObject<HTMLInputElement> ;
 
   const stuckClasses =
     'py-2 sticky top-n-1 z-50 transition-all backdrop isSticky mx-auto border-b border-slate-900/10 dark:border-slate-300/10 mb-16 w-full'
@@ -28,26 +27,16 @@ const LayoutWrapper = ({ children }: Props) => {
 
   const classes = stuck ? stuckClasses : unstuckClasses
 
-  useEffect(() => {
-    const cachedRef = ref.current 
-    if (cachedRef==undefined){
-      return
-    }
-
-      const observer = new IntersectionObserver(
-        ([e]) => {
-          setStuck(e.intersectionRatio < 1)
-        },
-        { threshold: [1.0] }
-        )
-        observer.observe(cachedRef)
-        return () => observer.unobserve(cachedRef )
-      }, [ref])
+  
+   
       
       return (
         <>
-          <header className={classes} ref={ref}>
-          <div className="flex justify-between items-center max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
+        <SectionContainer>
+      <div className="flex flex-col justify-between h-screen">
+
+          <header className={classes} >
+          <div className="flex items-center justify-between max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
             <div>
               <Link href="/" aria-label="rooks blog">
                 <div className="flex items-center justify-between">
@@ -55,12 +44,12 @@ const LayoutWrapper = ({ children }: Props) => {
                     <Logo />
                   </div>
                   {typeof siteMetadata.headerTitle === 'string' ? (
-                    <div className="hidden text-2xl text-white font-semibold sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">
+                    <div className="hidden text-2xl font-semibold text-white sm:block title mono-type hover:text-primary-600 dark:hover:text-primary-400">
                       {siteMetadata.headerTitle}
                     </div>
                   ) : (
                     siteMetadata.headerTitle
-                  )}
+                    )}
                 </div>
               </Link>
             </div>
@@ -68,9 +57,9 @@ const LayoutWrapper = ({ children }: Props) => {
               <div className="hidden sm:block">
                 {headerNavLinks.map((link) => (
                   <Link
-                    key={link.title}
-                    href={link.href}
-                    className="p-1 font-bold text-gray-900 sm:p-4 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400"
+                  key={link.title}
+                  href={link.href}
+                  className="p-1 font-bold text-gray-900 sm:p-4 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400"
                   >
                     {link.title}
                   </Link>
@@ -78,7 +67,7 @@ const LayoutWrapper = ({ children }: Props) => {
               </div>
 
               <MobileNav />
-              <div className="flex items-center  mb-3 space-x-4">
+              <div className="flex items-center mb-3 space-x-4">
                 <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
                 <SocialIcon kind="github" href={siteMetadata.github} />
                 <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
@@ -93,6 +82,8 @@ const LayoutWrapper = ({ children }: Props) => {
             <Footer />
           </SectionContainer>
         </header>
+                </div>
+        </SectionContainer>
     </>
   )
 }
