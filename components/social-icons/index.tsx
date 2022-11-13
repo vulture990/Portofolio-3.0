@@ -2,7 +2,7 @@ import Mail from './mail.svg'
 import Github from './github.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 
 
 const components = {
@@ -20,21 +20,21 @@ const SocialIcon = ({ kind, href }) => {
   const SocialSvg = components[kind]
 
   return (
-    <motion.a
+    <a
       key={kind}
       className="text-sm text-gray-500 transition hover:text-gray-600"
       target="_blank"
       rel="noopener noreferrer"
       href={href}
-      whileHover={{ y: -4 }}
-      transition={{ type: 'spring', stiffness: 300, damping: 20 ,duration:2}}
+      // whileHover={{ y: -4 }}
+      // transition={{ type: 'spring', stiffness: 300, damping: 20 ,duration:2}}
     >
       <span className="sr-only">{kind}</span>
       <SocialSvg
         style={{ height: '1.5rem', width: '1.5rem' }}
         className={`fill-current text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400`}
       />
-    </motion.a>
+    </a>
   )
 }
 

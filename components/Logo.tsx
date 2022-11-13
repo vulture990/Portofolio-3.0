@@ -1,30 +1,29 @@
 import React, { FC } from "react";
-import { motion, useCycle, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 
 export const Logo: FC = () => {
-  const [name, toggleName] = useCycle(false, true);
+  // const [name, toggleName] = useCycle(false, true);
   const { theme } = useTheme();
   return (
     <div className="flex flex-row">
-      <motion.svg
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 458 458"
         key="logo"
         width="70px"
         overflow="visible"
-        whileHover={{ x: 10}}
-        initial={{ x: 100, opacity: 0}}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "spring", stiffness: 50 }}
-        onMouseDown={() => toggleName()}
-        onMouseUp={() => toggleName()}
-        onMouseEnter={() => toggleName()}
-        onMouseLeave={() => toggleName()}
+        // whileHover={{ x: 10}}
+        // initial={{ x: 100, opacity: 0}}
+        // animate={{ x: 0, opacity: 1 }}
+        // transition={{ type: "spring", stiffness: 50 }}
+        // onMouseDown={() => toggleName()}
+        // onMouseUp={() => toggleName()}
+        // onMouseEnter={() => toggleName()}
+        // onMouseLeave={() => toggleName()}
       >
         {/* dark */}*
         {theme === "dark" || undefined ? (
-                    <><motion.path
+                    <><path
                     fill="#ffffff"
                     d="M115.17 231.45L143.64 206.1L311.08 394.16L282.61 419.51L115.17 231.45Z" id="bSDweug76" /><motion.path
                       fill="#ffffff"
@@ -36,7 +35,7 @@ export const Logo: FC = () => {
       
 
                       ) : (
-          <><motion.path
+          <><path
             fill="#1A202C"
             d="M115.17 231.45L143.64 206.1L311.08 394.16L282.61 419.51L115.17 231.45Z" id="bSDweug76" /><motion.path
               fill="#1A202C"
@@ -47,7 +46,7 @@ export const Logo: FC = () => {
               d="M333.91 259.95L365.57 259.95L365.57 290.88L333.91 290.88L333.91 259.95Z" id="b1pLj0wSAi" /></>
             )}
      
-      </motion.svg>
+      </svg>
 
       
     </div>
