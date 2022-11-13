@@ -19,6 +19,7 @@ interface Props {
 
 const LayoutWrapper = ({ children }: Props) => {
   const [stuck, setStuck] = useState(false)
+  const ref = useRef() as React.MutableRefObject<HTMLInputElement> ;
 
   const stuckClasses =
     'py-2 sticky top-n-1 z-50 transition-all backdrop isSticky mx-auto border-b border-slate-900/10 dark:border-slate-300/10 mb-16 w-full'
@@ -27,14 +28,23 @@ const LayoutWrapper = ({ children }: Props) => {
 
   const classes = stuck ? stuckClasses : unstuckClasses
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 0
+      if (show) {
+        setStuck(true)
+      } else {
+        setStuck(false)
+      }
+    }
+    document.addEventListener('scroll', handleScroll)
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   
-   
-      
       return (
         <>
-        <SectionContainer>
-      <div className="flex flex-col justify-between h-screen">
-
           <header className={classes} >
           <div className="flex items-center justify-between max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
             <div>
@@ -49,7 +59,7 @@ const LayoutWrapper = ({ children }: Props) => {
                     </div>
                   ) : (
                     siteMetadata.headerTitle
-                    )}
+                  )}
                 </div>
               </Link>
             </div>
@@ -57,9 +67,9 @@ const LayoutWrapper = ({ children }: Props) => {
               <div className="hidden sm:block">
                 {headerNavLinks.map((link) => (
                   <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-bold text-gray-900 sm:p-4 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400"
+                    key={link.title}
+                    href={link.href}
+                    className="p-1 font-bold text-gray-900 sm:p-4 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400"
                   >
                     {link.title}
                   </Link>
@@ -82,8 +92,6 @@ const LayoutWrapper = ({ children }: Props) => {
             <Footer />
           </SectionContainer>
         </header>
-                </div>
-        </SectionContainer>
     </>
   )
 }
