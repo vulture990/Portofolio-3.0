@@ -1,7 +1,6 @@
 import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
-import ThemeSwitch from './ThemeSwitch'
 
 export default function Footer() {
   return (
@@ -12,7 +11,6 @@ export default function Footer() {
           <SocialIcon kind="github" href={siteMetadata.github} />
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
           <SocialIcon kind="twitter" href={siteMetadata.twitter} />
-          <ThemeSwitch/>
         </div>
         <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <Link
