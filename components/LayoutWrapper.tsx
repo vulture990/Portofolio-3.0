@@ -11,11 +11,11 @@ import Link from './Link'
 import MobileNav from './MobileNav'
 import SectionContainer from './SectionContainer'
 import SocialIcon from './social-icons'
-import ThemeSwitch from './ThemeSwitch'
 
 interface Props {
   children: ReactNode
 }
+
 
 const LayoutWrapper = ({ children }: Props) => {
   const [stuck, setStuck] = useState(false)
@@ -82,7 +82,6 @@ const LayoutWrapper = ({ children }: Props) => {
                 <SocialIcon kind="github" href={siteMetadata.github} />
                 <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
                 <SocialIcon kind="twitter" href={siteMetadata.twitter} />
-                <ThemeSwitch />
 
               </div>
             </div>

@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'Vulture',
   description: 'A blog about programming , philosophy , music and most of the stuff that intrests me',
   language: 'en-us',
-  theme: 'dark', // system, dark or light
+  theme: 'light', // system, dark or light
   siteUrl: '/',
   siteRepo: 'https://github.com/vulture990/portofolio3.0',
   siteLogo: '/static/images/logo.png',
