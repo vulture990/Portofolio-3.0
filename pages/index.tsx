@@ -10,6 +10,7 @@ import { data } from 'rehype-citation/node/src/citation-js/core/plugins/input'
 import { transform } from 'esbuild'
 import Tracks from '@/components/Toptracker'
 import NowPlaying from '@/components/NowPlaying'
+import ThemeSwitch from '@/components/ThemeSwitch'
 
 const MAX_DISPLAY = 5
 
@@ -80,6 +81,7 @@ export default function Home({ posts}: InferGetStaticPropsType<typeof getStaticP
           
             <div>
               <NowPlaying/>
+              <ThemeSwitch/>
            
         <Tracks />
             </div>
