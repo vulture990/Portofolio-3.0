@@ -39,7 +39,7 @@ const LayoutWrapper = ({ children }) => {
       return (
         <>
           <header className={classes}>
-          <div className="flex md:sticky md:top-0 md:z-50 md:backdrop-blur-md	  items-center justify-between max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0 " >
+          <div className="flex items-center justify-between max-w-3xl px-4 mx-auto md:sticky md:top-0 md:z-50 md:backdrop-blur-md sm:px-6 xl:max-w-3xl xl:px-0 " >
             <div>
               <Link href="/" aria-label="rooks blog">
                 <div className="flex items-center justify-between">
