@@ -27,7 +27,8 @@ const Hero = () => {
           internship .
         </p>
         <p className="mt-2 text-sm text-gray-400 dark:text-gray-400">
-          My intrests are philosophy, psychology, music and technology.
+          I go by Vulture as my Nickname. My intrests are philosophy,
+          psychology, music and technology.
         </p>
         <p className="mt-2 text-sm text-gray-400 dark:text-gray-400">
           Fun Fact about me , Dark Side of the Moon is my favorite album of all
