@@ -1,15 +1,33 @@
-// @ts-check
-/* eslint-disable @typescript-eslint/no-var-requires */
-
+/* eslint-disable prettier/prettier */
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
-/** @type {import("tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
-  content: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx', './lib/**/*.ts'],
+  mode: 'jit',
+  purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
   darkMode: 'class',
   theme: {
+    backdropFilter: {
+      'none': 'none',
+      'blur': 'blur(20px)',
+    },
     extend: {
+      animation: {
+        tilt: 'tilt 4s infinite linear',
+      },
+      keyframes: {
+        tilt: {
+          '0%, 50%, 100%': {
+            transform: 'rotate(0deg)',
+          },
+          '25%': {
+            transform: 'rotate(0.5deg)',
+          },
+          '75%': {
+            transform: 'rotate(-0.5deg)',
+          },
+        },
+      },
       spacing: {
         '9/16': '56.25%',
       },
@@ -20,13 +38,25 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        // @ts-ignore
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.sky,
-        //@ts-ignore
-        gray: colors.slate, // TODO: Remove ts-ignore after tw types gets updated to v3
+        gray: colors.slate, 
+        darkBg: '#060606',
+        darkBgLight: '#27272a',
+        blue: colors.sky,
+        code: {
+          green: '#b5f4a5',
+          yellow: '#ffe484',
+          purple: '#d9a9ff',
+          red: '#ff8383',
+          blue: '#93ddfd',
+          white: '#fff',
+          black:'#000',
+        },
+        fuchsia: colors.fuchsia,
+        ...colors,
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -56,14 +86,8 @@ module.exports = {
             'h4,h5,h6': {
               color: theme('colors.gray.900'),
             },
-            p: {
-              fontSize: '18px',
-            },
-            pre: {
-              backgroundColor: theme('colors.gray.800'),
-            },
             code: {
-              color: theme('colors.pink.500'),
+              color: theme('colors.fuchsia.300'),
               backgroundColor: theme('colors.gray.100'),
               paddingLeft: '4px',
               paddingRight: '4px',
@@ -71,10 +95,10 @@ module.exports = {
               paddingBottom: '2px',
               borderRadius: '0.25rem',
             },
-            'code::before': {
+            'code:before': {
               content: 'none',
             },
-            'code::after': {
+            'code:after': {
               content: 'none',
             },
             details: {
@@ -86,11 +110,11 @@ module.exports = {
               borderRadius: '0.25rem',
             },
             hr: { borderColor: theme('colors.gray.200') },
-            'ol li::marker': {
+            'ol li:before': {
               fontWeight: '600',
               color: theme('colors.gray.500'),
             },
-            'ul li::marker': {
+            'ul li:before': {
               backgroundColor: theme('colors.gray.500'),
             },
             strong: { color: theme('colors.gray.600') },
@@ -127,9 +151,6 @@ module.exports = {
             'h4,h5,h6': {
               color: theme('colors.gray.100'),
             },
-            pre: {
-              backgroundColor: theme('colors.gray.800'),
-            },
             code: {
               backgroundColor: theme('colors.gray.800'),
             },
@@ -137,18 +158,16 @@ module.exports = {
               backgroundColor: theme('colors.gray.800'),
             },
             hr: { borderColor: theme('colors.gray.700') },
-            'ol li::marker': {
+            'ol li:before': {
               fontWeight: '600',
               color: theme('colors.gray.400'),
             },
-            'ul li::marker': {
+            'ul li:before': {
               backgroundColor: theme('colors.gray.400'),
             },
             strong: { color: theme('colors.gray.100') },
             thead: {
-              th: {
-                color: theme('colors.gray.100'),
-              },
+              color: theme('colors.gray.100'),
             },
             tbody: {
               tr: {
@@ -164,5 +183,11 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  variants: {
+    typography: ['dark'],
+  },
+  plugins: [require('@tailwindcss/forms'), 
+  require('@tailwindcss/typography'),
+    require('tailwindcss-filters'),
+  ],
 }

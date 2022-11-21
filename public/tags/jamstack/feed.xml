@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Vulture</title>
+      <link>//content</link>
+      <description>A blog about programming , philosophy , music and most of the stuff that intrests me</description>
+      <language>en-us</language>
+      <managingEditor>mohamedsali602@live.com (Salbi Mohamed)</managingEditor>
+      <webMaster>mohamedsali602@live.com (Salbi Mohamed)</webMaster>
+      <lastBuildDate>Invalid Date</lastBuildDate>
+      <atom:link href="//tags/jamstack/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>//jamstack</guid>
+    <title>Static sites are dead. Long live static sites?</title>
+    <link>//jamstack</link>
+    <description>JAMStack is a revolutionary new way to create blazing fast and secure web applications (PWA) and websites.</description>
+    <pubDate>Mon, 19 Oct 2020 00:00:00 GMT</pubDate>
+    <author>mohamedsali602@live.com (Salbi Mohamed)</author>
+    <category>jamstack</category><category>technology</category><category>javascript</category><category>frontend</category><category>development</category><category>opinion</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -2,20 +2,20 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Vulture</title>
-      <link>//blog</link>
+      <link>//content</link>
       <description>A blog about programming , philosophy , music and most of the stuff that intrests me</description>
       <language>en-us</language>
       <managingEditor>mohamedsali602@live.com (Salbi Mohamed)</managingEditor>
       <webMaster>mohamedsali602@live.com (Salbi Mohamed)</webMaster>
-      <lastBuildDate>Tue, 18 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Invalid Date</lastBuildDate>
       <atom:link href="//tags/next-js/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>//blog/hello-world</guid>
+    <guid>//hello-world</guid>
     <title>Hello World</title>
-    <link>//blog/hello-world</link>
-    <description>New template, new framework. Hello World!</description>
-    <pubDate>Tue, 18 Oct 2022 00:00:00 GMT</pubDate>
+    <link>//hello-world</link>
+    <description>New template, new framework. Hello World! This is a simple post with a summary.</description>
+    <pubDate>Sun, 20 Nov 2022 00:00:00 GMT</pubDate>
     <author>mohamedsali602@live.com (Salbi Mohamed)</author>
     <category>next-js</category>
   </item>

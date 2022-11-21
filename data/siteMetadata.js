@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const siteMetadata = {
   title: 'Vulture',
   author: 'Salbi Mohamed',

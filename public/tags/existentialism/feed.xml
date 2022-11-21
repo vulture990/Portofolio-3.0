@@ -2,20 +2,20 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Vulture</title>
-      <link>//blog</link>
+      <link>//content</link>
       <description>A blog about programming , philosophy , music and most of the stuff that intrests me</description>
       <language>en-us</language>
       <managingEditor>mohamedsali602@live.com (Salbi Mohamed)</managingEditor>
       <webMaster>mohamedsali602@live.com (Salbi Mohamed)</webMaster>
-      <lastBuildDate>Thu, 22 Sep 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Invalid Date</lastBuildDate>
       <atom:link href="//tags/existentialism/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>//blog/to-the-ships-philosophers</guid>
+    <guid>//to-the-ships-philosophers</guid>
     <title>To the Ships, Philosophers!</title>
-    <link>//blog/to-the-ships-philosophers</link>
+    <link>//to-the-ships-philosophers</link>
     <description>Living in a world that requires a new faith. How Nietszche saw it and what he thought about it.</description>
-    <pubDate>Thu, 22 Sep 2022 00:00:00 GMT</pubDate>
+    <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
     <author>mohamedsali602@live.com (Salbi Mohamed)</author>
     <category>Nietzsche</category><category>Existentialism</category><category>philosophy</category>
   </item>

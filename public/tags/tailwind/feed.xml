@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Vulture</title>
+      <link>//content</link>
+      <description>A blog about programming , philosophy , music and most of the stuff that intrests me</description>
+      <language>en-us</language>
+      <managingEditor>mohamedsali602@live.com (Salbi Mohamed)</managingEditor>
+      <webMaster>mohamedsali602@live.com (Salbi Mohamed)</webMaster>
+      <lastBuildDate>Sun, 23 May 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="//tags/tailwind/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>//tailwind-glassmorphism</guid>
+    <title>Glassmorphism with Tailwind CSS Under 60 seconds</title>
+    <link>//tailwind-glassmorphism</link>
+    <description>Quick guide on how to achive the hyped glass morphism effect with Tailwind (updated with Tailwind v2.1)</description>
+    <pubDate>Thu, 17 Dec 2020 00:00:00 GMT</pubDate>
+    <author>mohamedsali602@live.com (Salbi Mohamed)</author>
+    <category>react</category><category>tailwind</category><category>coding</category>
+  </item>
+
+    </channel>
+  </rss>

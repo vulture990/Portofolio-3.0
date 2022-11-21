@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Vulture</title>
+      <link>//content</link>
+      <description>A blog about programming , philosophy , music and most of the stuff that intrests me</description>
+      <language>en-us</language>
+      <managingEditor>mohamedsali602@live.com (Salbi Mohamed)</managingEditor>
+      <webMaster>mohamedsali602@live.com (Salbi Mohamed)</webMaster>
+      <lastBuildDate>Invalid Date</lastBuildDate>
+      <atom:link href="//tags/freelancing/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>//the-online-client-machine-blueprint</guid>
+    <title>The Online Client Machine Blueprint</title>
+    <link>//the-online-client-machine-blueprint</link>
+    <description>The goal is not just to quickly get a few clients. It&#39;s not a challenge to get 1-2 partners quickly. We are aiming to build relationships, and create a steady, consistent drip of projects instead of just one pop.</description>
+    <pubDate>Sun, 07 Nov 2021 00:00:00 GMT</pubDate>
+    <author>mohamedsali602@live.com (Salbi Mohamed)</author>
+    <category>linkedin</category><category>personal brand</category><category>marketing</category><category>freelancing</category><category>online presence</category>
+  </item>
+
+  <item>
+    <guid>//fired-my-client</guid>
+    <title>I FIRED One of My Biggest Clients - Freelancing Stories S01E01</title>
+    <link>//fired-my-client</link>
+    <description>Todays episode of Freelancing Stories, we&#39;re talking about some issues which ultimately led me to fire one of my biggest client. I reviewed this project and processes lots of times and tried to analyze what happened and how could I fix them next time, so I&#39;ll bring some lessons too.</description>
+    <pubDate>Sun, 11 Oct 2020 00:00:00 GMT</pubDate>
+    <author>mohamedsali602@live.com (Salbi Mohamed)</author>
+    <category>freelancing</category>
+  </item>
+
+  <item>
+    <guid>//productive-remote-teamwork</guid>
+    <title>Productive Remote Teamwork For Product Teams</title>
+    <link>//productive-remote-teamwork</link>
+    <description>The work culture evolved like 5 years in early 2020. Now, I’ve summarised my experiences working with 10+ remote teams and clients in the last half-decade. How to maintain human contacts, how to be productive, and what tools &amp; apps I recommend for your team to maximize efficiency.</description>
+    <pubDate>Mon, 16 Mar 2020 00:00:00 GMT</pubDate>
+    <author>mohamedsali602@live.com (Salbi Mohamed)</author>
+    <category>freelancing</category><category>productivity</category><category>business</category><category>remote work</category><category>async communication</category>
+  </item>
+
+    </channel>
+  </rss>

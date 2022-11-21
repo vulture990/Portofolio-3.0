@@ -2,29 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-.task-list-item::before {
+.remark-code-title {
+  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t;
+}
+
+.remark-code-title + div > pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.task-list-item:before {
   @apply hidden;
 }
 
-.task-list-item {
-  @apply list-none;
+.code-line {
+  @apply pl-4 -mx-4 border-l-4 border-gray-800;
 }
 
-.footnotes {
-  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+.highlight-line {
+  @apply -mx-4 bg-gray-700 bg-opacity-50 border-l-4 border-primary-500;
 }
 
-.csl-entry {
-  @apply my-5;
+.line-number::before {
+  @apply pr-4 -ml-2 text-gray-400;
+  content: attr(line);
 }
 
-:root {
-  /* Your default theme */
-  --bg: #fff;
-}
-
-[color-scheme='dark'] {
-  --bg: #10172a;
+html {
+  scroll-behavior: smooth;
 }
 
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
@@ -32,52 +36,3 @@ input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
-
-.backdrop {
-  backdrop-filter: blur(6px);
-}
-
-.top-n-1 {
-  top: -5px;
-}
-
-header.isSticky .title {
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.leftNav {
-  opacity: 0;
-}
-
-.leftNav.isSticky {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.table-of-contents {
-  position: sticky;
-  display: none;
-}
-
-.leftNav.isSticky .table-of-contents {
-  display: block;
-}
-
-.post-img {
-  max-width: 500px;
-  margin: auto;
-}
-
-::selection {
-  background-color: rgba(56, 189, 248, 0.2);
-}
-
-.mono-type {
-  font-family: 'Major Mono Display', monospace;
-}
-
-.prismcontainer {
-  width:30%;
-  height:30%;
-  }
