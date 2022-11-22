@@ -52,11 +52,7 @@ export default function Home({ posts }) {
           </Link>
           <div>
             <NowPlaying/>
-            <section className='bg-gray-200'>
-        <main className='flex items-center justify-center'>
-          {console.log("zzzz",data)}
-        </main>
-      </section>
+           
           </div>
           
         </div>
@@ -128,13 +124,13 @@ export default function Home({ posts }) {
       </div>
       <div className="flex flex-col items-center justify-start md:justify-center md:items-center md:flex-row md:space-x-6 md:mt-24 ">
 
-          <div className='text-center  '>
+          <div className='text-center '>
             <h2 className='font-extrabold text-md md:text-3xl '>
             Skills
             </h2>
             <div className='flex space-y-2 md:space-y-5'>
-            <div className=' flex flex-col md:flex-row md:space-x-5'>
-            <div className =' items-center justify-between'>
+            <div className='flex flex-col md:flex-row md:space-x-5'>
+            <div className ='items-center justify-between '>
 
             <h1 className="text-2xl leading-9 tracking-tight text-center text-gray-900 border-b-2 mono-type dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-xl md:leading-14">
             Frontend 

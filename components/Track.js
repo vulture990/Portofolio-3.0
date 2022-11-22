@@ -12,13 +12,13 @@ export default function Track(track) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {track.title}
+            {track.name}
           </a>
           <p
             className="mb-4 text-gray-500 truncate w-60 sm:w-96 md:w-full"
             color="gray.500"
           >
-            {track.artist}
+            {track.artists[0].name}
           </p>
         </div>
       </div>
