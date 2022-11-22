@@ -1,130 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>//about</loc>
+    <loc>https://www.salbi.tech/about</loc>
   </url>
 
   <url>
-    <loc>//blog</loc>
+    <loc>https://www.salbi.tech/blog</loc>
   </url>
 
   <url>
-    <loc>/</loc>
+    <loc>https://www.salbi.tech</loc>
   </url>
 
   <url>
-    <loc>//projects</loc>
+    <loc>https://www.salbi.tech/music</loc>
   </url>
 
   <url>
-    <loc>//saas-kit</loc>
+    <loc>https://www.salbi.tech/projects</loc>
   </url>
 
   <url>
-    <loc>//tags</loc>
+    <loc>https://www.salbi.tech/saas-kit</loc>
   </url>
 
   <url>
-    <loc>//tools</loc>
+    <loc>https://www.salbi.tech/tags</loc>
   </url>
 
   <url>
-    <loc>//hello-world</loc>
+    <loc>https://www.salbi.tech/tools</loc>
   </url>
 
   <url>
-    <loc>//to-the-ships-philosophers</loc>
+    <loc>https://www.salbi.tech/god-is-dead</loc>
   </url>
 
   <url>
-    <loc>/data/authors/default</loc>
+    <loc>https://www.salbi.tech/time-is-a-flat-circle</loc>
   </url>
 
   <url>
-    <loc>//tags/async-communication</loc>
+    <loc>https://www.salbi.techdata/authors/default</loc>
   </url>
 
   <url>
-    <loc>//tags/business</loc>
+    <loc>https://www.salbi.tech/tags/async-communication</loc>
   </url>
 
   <url>
-    <loc>//tags/coding</loc>
+    <loc>https://www.salbi.tech/tags/business</loc>
   </url>
 
   <url>
-    <loc>//tags/development</loc>
+    <loc>https://www.salbi.tech/tags/cinema</loc>
   </url>
 
   <url>
-    <loc>//tags/existentialism</loc>
+    <loc>https://www.salbi.tech/tags/coding</loc>
   </url>
 
   <url>
-    <loc>//tags/freelancing</loc>
+    <loc>https://www.salbi.tech/tags/development</loc>
   </url>
 
   <url>
-    <loc>//tags/jamstack</loc>
+    <loc>https://www.salbi.tech/tags/eternal-return</loc>
   </url>
 
   <url>
-    <loc>//tags/frontend</loc>
+    <loc>https://www.salbi.tech/tags/existentialism</loc>
   </url>
 
   <url>
-    <loc>//tags/javascript</loc>
+    <loc>https://www.salbi.tech/tags/freelancing</loc>
   </url>
 
   <url>
-    <loc>//tags/linkedin</loc>
+    <loc>https://www.salbi.tech/tags/frontend</loc>
   </url>
 
   <url>
-    <loc>//tags/marketing</loc>
+    <loc>https://www.salbi.tech/tags/jamstack</loc>
   </url>
 
   <url>
-    <loc>//tags/next-js</loc>
+    <loc>https://www.salbi.tech/tags/javascript</loc>
   </url>
 
   <url>
-    <loc>//tags/nietzsche</loc>
+    <loc>https://www.salbi.tech/tags/linkedin</loc>
   </url>
 
   <url>
-    <loc>//tags/online-presence</loc>
+    <loc>https://www.salbi.tech/tags/marketing</loc>
   </url>
 
   <url>
-    <loc>//tags/opinion</loc>
+    <loc>https://www.salbi.tech/tags/next-js</loc>
   </url>
 
   <url>
-    <loc>//tags/personal-brand</loc>
+    <loc>https://www.salbi.tech/tags/nietzsche</loc>
   </url>
 
   <url>
-    <loc>//tags/philosophy</loc>
+    <loc>https://www.salbi.tech/tags/online-presence</loc>
   </url>
 
   <url>
-    <loc>//tags/productivity</loc>
+    <loc>https://www.salbi.tech/tags/opinion</loc>
   </url>
 
   <url>
-    <loc>//tags/react</loc>
+    <loc>https://www.salbi.tech/tags/personal-brand</loc>
   </url>
 
   <url>
-    <loc>//tags/remote-work</loc>
+    <loc>https://www.salbi.tech/tags/philosophy</loc>
   </url>
 
   <url>
-    <loc>//tags/tailwind</loc>
+    <loc>https://www.salbi.tech/tags/productivity</loc>
   </url>
 
   <url>
-    <loc>//tags/technology</loc>
+    <loc>https://www.salbi.tech/tags/react</loc>
+  </url>
+
+  <url>
+    <loc>https://www.salbi.tech/tags/remote-work</loc>
+  </url>
+
+  <url>
+    <loc>https://www.salbi.tech/tags/tailwind</loc>
+  </url>
+
+  <url>
+    <loc>https://www.salbi.tech/tags/technology</loc>
+  </url>
+
+  <url>
+    <loc>https://www.salbi.tech/tags/true-detective</loc>
+  </url>
+
+  <url>
+    <loc>https://www.salbi.tech/tags/tv-shows</loc>
   </url>
 </urlset>
