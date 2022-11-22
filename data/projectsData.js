@@ -12,7 +12,30 @@ const projectsData = [
     imgSrc: '/static/images/time-machine.jpg',
     href: '/#',
   },
-
+  {
+    title: 'Automation,Web scrapping and Scripting Tools',
+    description :'I created many automation tools that does very specific task going from scraping a billboard to building bots on discord. I used python for most of them and some of them are in JS.',
+    imgSrc: '/static/images/time-machine.jpg',
+    href: '/#',
+  },
+  {
+    title:'Portfolio',
+    description:'I built different versions of My portfolio website this one is my lastest built with Next.js and Tailwind CSS.',
+    imgSrc: '/static/images/time-machine.jpg',
+    href: '/#',
+  },
+  {
+    title:'Semesterone Project',
+    description:'I built a web app using django and react js along with redux for the purpose of  finding Undergraduate & Postgraduate courses in Australia.',
+    imgSrc: '/static/images/time-machine.jpg',
+    href: 'https://semesterone.com/',
+  },
+  {
+    title:'NFT minting Website',
+    description:'I built a website for minting NFTs using React JS , Solidity and hardhat', 
+    imgSrc: '/static/images/time-machine.jpg',
+    href: '/',
+  },
 ]
 
 export default projectsData
