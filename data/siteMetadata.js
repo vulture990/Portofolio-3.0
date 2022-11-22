@@ -6,11 +6,11 @@ const siteMetadata = {
   description: 'A blog about programming , philosophy , music and most of the stuff that intrests me',
   language: 'en-us',
   theme: 'light', // system, dark or light
-  siteUrl: 'https://www.salbi.tech/',
+  siteUrl: 'https://www.salbi.tech',
   siteRepo: 'https://github.com/vulture990/portofolio3.0',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/me.jpeg',
-  socialBanner: 'static/images/twitter-card.png',
+  socialBanner: '/static/images/twitter-card.png',
   email: 'mohamedsali602@live.com',
   github: 'https://github.com/vulture990',
   twitter: 'https://twitter.com/mohamedsalbi',
