@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'A blog about programming , philosophy , music and most of the stuff that intrests me',
   language: 'en-us',
   theme: 'light', // system, dark or light
-  siteUrl: '/',
+  siteUrl: 'https://www.salbi.tech/',
   siteRepo: 'https://github.com/vulture990/portofolio3.0',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/me.jpeg',
