@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/vulture990/portofolio3.0',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/me.jpeg',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: 'static/images/twitter-card.png',
   email: 'mohamedsali602@live.com',
   github: 'https://github.com/vulture990',
   twitter: 'https://twitter.com/mohamedsalbi',
