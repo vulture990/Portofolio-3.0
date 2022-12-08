@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.jpg',
   email: 'mohamedsali602@live.com',
   github: 'https://github.com/vulture990',
-  twitter: 'https://twitter.com/mohamedsalbi',
+  twitter: 'https://twitter.com/mohamed_salbi',
   linkedin: 'https://www.linkedin.com/in/mohamed-salbi-4268671b4/',
   locale: 'en-US',
   analytics: {
