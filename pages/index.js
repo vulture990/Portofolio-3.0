@@ -175,19 +175,16 @@ export default function Home({ posts }) {
             </div>
             <div>
           <h1 className="text-2xl leading-9 tracking-tight text-center text-gray-900 border-b-2 mono-type dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-xl md:leading-14">
-             Blockchain development
+             DevOps
           </h1>
           <h2 className='mt-2 text-gray-500 text-md md:text-xl'>
-            - Solidity
+            - Docker
           </h2>
             <h2 className='mt-2 text-gray-500 text-md md:text-xl'>
-            - Truffle
+            - Kubernetes
             </h2>
             <h2 className='mt-2 text-gray-500 text-md md:text-xl'>
-            - Web3.js
-            </h2>
-            <h2 className='mt-2 text-gray-500 text-md md:text-xl'>
-            - Hardhat
+            - AWS
             </h2>
 
             </div>
